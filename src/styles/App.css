@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*overflow-x: hidden;*/
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App {
+  width: 800px;
+  padding: 24px 0;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  border: 2px solid teal;
+  margin-top: 14px;
+}
+
+.post-enter {
+  opacity: 0.3;
+  transform: translateX(-350px);
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  opacity: 0.3;
+  transform: translateX(-350px);
+  transition: all 500ms ease-in;
+}
